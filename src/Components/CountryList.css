@@ -1,0 +1,9 @@
+.clDiv {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.clDiv div{
+    margin-left: 20px;
+    margin-top: 20px;
+}

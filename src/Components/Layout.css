@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#header {
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 50px;
+}
+
+#search_bar {
+    height: 2rem;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section01 img {
+    border-radius: 50%;
+    border: 2px black solid;
+    margin: 10px;
+}
+
+#section02{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section02 img {
+    border: 2px black solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.country {
+    cursor: pointer;
+}
