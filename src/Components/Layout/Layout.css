@@ -1,22 +1,12 @@
-body {
-    background-color: rgb(255, 255, 255);
-}
-
-#header {
-    background-color: antiquewhite;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    height: 50px;
-}
-
-#search_bar {
-    height: 2rem;
-}
-
 #main {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+#section01 {
+    width: 100%;
+    margin-top: 170px;
 }
 
 #section01 img {
@@ -38,4 +28,8 @@ body {
 
 .country {
     cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }

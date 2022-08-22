@@ -1,0 +1,41 @@
+
+.header_container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: fixed;
+}
+
+.header_search_bar,
+.header_searchContinent,
+.header_count{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_search_bar{
+    width: 250px;
+}
+.header_search_bar input{
+    width: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+
+.header_search_bar input:hover{
+    width: 100%;
+}

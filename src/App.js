@@ -1,26 +1,31 @@
-import { useEffect, useState } from "react"
 import Layout from "./Components/Layout";
+import { useEffect, useState } from "react"
 
-const [list, setList] = useState([])
-//shinui stam
-useEffect(getCountries,
-  [])
-
-function getCountries() {
-  fetch('https://restcountries.com/v3.1/all')
-    .then(response => response.json())
-    .then(data => {
-      setList(data);
-      // console.log(data);
-    })
-}
 function App() {
 
- 
+  const [list, setList] = useState([])
+
+  useEffect(() => {
+    fetch('https://restcountries.com/v3.1/all')
+      .then(response => response.json())
+      .then(data => {
+        setList(data);
+        // console.log(data);
+      })
+  }
+    , [])
+  //ascending
+  const sortData = [...list].sort((a, b) => {
+    return a.name.common.localeCompare(b.name.common)
+  })
+   //descending
+  //  const sortData = [...list].sort((a, b) => {
+  //   return a.name.common.localeCompare(b.name.common)
+  // })
+
+
   return (
-    <>
-      <Layout list={list} />
-    </>
+    <Layout list={sortData} />
   );
 }
 

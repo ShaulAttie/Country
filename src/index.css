@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 * {
-  box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -9,6 +9,12 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: #3f3f3f;
+  background-color: #aadaff;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../public/worldMap.png');
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: 0 120px;
 }
